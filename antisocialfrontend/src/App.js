@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
+import NavLink from './components/Nav.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header.js';
+
+
+class App extends Component {
 
 
 
-function App() {
+  render() {
+    return (
+      <div>
+        <Header />
 
-  return (
-    <div className="App">
-      <header className="App-header">
-  
-        <p>
-         test 
-        </p>
-          
-      </header>
-    </div>
-  );
+
+      </div>
+    )
+  }
 }
+
 
 export default App;
