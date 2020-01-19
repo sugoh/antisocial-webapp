@@ -1,17 +1,16 @@
 html{
   overflow-y : scroll;
   width:100%; 
-  height:100%; 
-
+  height: 100vh; 
 }
 body{
-  font-family: "Roboto";
+  font-family: "Barlow";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 800;
   color: #FFFFFF;
   background: #00344A;
+  
 }
-
  
 .bgdark{
   background-color: #00344A;
@@ -35,5 +34,19 @@ body{
 }
 
 .container{
+  height: 100vh;
+}
+
+.navbar-brand{
+  font-size: 30px;
+  line-height: 38px;
+  padding-left: 10px;
   
+}
+
+.text-success.custom.navbar-brand{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: lowercase;
 }

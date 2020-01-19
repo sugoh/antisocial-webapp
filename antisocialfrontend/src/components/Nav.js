@@ -10,7 +10,14 @@ class NavLink extends Component {
         return (
             <div>
                 <Navbar className="bgdark green " variant="dark">
-                    <Navbar.Brand className="text-success" href="#home"> SUPERPOTATO </Navbar.Brand>
+                    <img
+                        src={process.env.PUBLIC_URL + "/img/yay_potato.png"}
+                        className="logo"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                        alt="logo" />
+                    <Navbar.Brand className="text-success custom"> SUPERPOTATO </Navbar.Brand>
                     <Nav className="navbar-collapse collapse justify-content-end">
                         <Nav.Link className="text-success" href="#home">about</Nav.Link>
                         <Nav.Link className="text-success" > <CTA />  </Nav.Link>
