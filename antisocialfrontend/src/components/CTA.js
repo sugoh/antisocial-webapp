@@ -15,8 +15,8 @@ class CTA extends Component {
     render() {
         return (
             <div>
-                <Button color="link" variant="success" className="py-3 px-md-4 md greenButton" onClick={this.handleClick}>
-                    Get early access for free
+                <Button color="link" variant="success" className="px-md-4 md greenButton" onClick={this.handleClick}>
+                    Get early access
                     </Button>
             </div >
         );
