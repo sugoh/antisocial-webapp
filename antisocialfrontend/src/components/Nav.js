@@ -5,26 +5,24 @@ import Navbar from 'react-bootstrap/Navbar';
 import CTA from './CTA.js';
 
 class NavLink extends Component {
-
     render() {
         return (
-            <div>
-                <Navbar className="bgdark green " variant="dark">
+            <nav>
+                <Navbar className="navbar-default" variant="dark">
                     <img
                         src={process.env.PUBLIC_URL + "/img/yay_potato.png"}
                         className="logo"
-                        width="30"
-                        height="30"
+                        width="28"
+                        height="49"
                         className="d-inline-block align-top"
                         alt="logo" />
-                    <Navbar.Brand className="text-success custom"> SUPERPOTATO </Navbar.Brand>
+                    <Navbar.Brand className="text-success custom">superpotato</Navbar.Brand>
                     <Nav className="navbar-collapse collapse justify-content-end">
-                        <Nav.Link className="text-success" href="#home">about</Nav.Link>
-                        <Nav.Link className="text-success" > <CTA />  </Nav.Link>
+                        <Nav.Link className="nav-link" href="#home">about</Nav.Link>
+                        <button className="btn btn-primary" type="button">Get early access</button>
                     </Nav>
                 </Navbar>
-
-            </div >
+            </nav>
         )
     }
 
