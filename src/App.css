@@ -1,0 +1,295 @@
+html{
+  overflow-y : scroll;
+  width:100%; 
+  height: 100vh; 
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #FFFFFF;
+  background: #00344A;
+}
+
+.font-light {
+  color: #66625C;
+}
+
+em{
+  font-weight: bold;
+}
+
+h1{
+  font-size: 52px;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+h2.font-light {
+  color: #3F4034;
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: 22px;
+}
+
+h3.subtitle{
+  color: #E6EFF3;
+  line-height: 33px;
+}
+
+h3.font-light{
+  text-transform: uppercase;
+}
+
+.bgdark{
+  background-color: #00344A;
+}
+
+.green{
+  color: #7FBF16;
+}
+
+.btn{
+  padding: 1rem 1.5rem;
+  border-radius: 100rem;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-primary{
+  background-color: #7FBF16;
+  color: #FFF;
+}
+
+.btn-primary:hover{
+  background-color: #89DC00;
+}
+
+.display-linebreak {
+  white-space: pre-line;  
+}
+
+.container{
+  height: 100vh;
+}
+
+.navbar-default{
+  padding: 1rem 3rem;
+}
+
+nav{
+  position: fixed;
+  z-index: 1;
+  background-color: #00344A;
+  width: 100%;
+}
+
+nav .btn{
+  margin: 0 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: #7FBF16;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #89DC00;
+  font-weight: bold;
+}
+
+.navbar-brand{
+  font-size: 30px;
+  line-height: 38px;
+  padding-left: 10px;
+}
+
+.text-success.custom.navbar-brand{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: lowercase;
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+}
+
+.hero.jumbotron{
+  display: flex;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  max-height: 700px;
+  margin: 0;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.hero .col{
+  display: flex;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+
+.hero .container{
+  display: flex;
+  -webkit-display: flex;
+  height: auto;
+} 
+
+.hero .col.col-text{
+  padding-right: 4em;
+  padding-left: 0;
+  justify-content: flex-start;
+  align-content: center;
+  width: 50%;
+}
+
+.hero .display-4{
+  width: 100%;
+  font-weight: bold;
+}
+
+.hero .col.col-text p{
+  width: 100%;
+  font-size: 22px;
+  color: #E6EFF3;
+  line-height: 30px;
+  margin: 0;
+}
+
+.hero .col-text button{
+  margin-top: 2em;
+  padding: 1rem 2rem;
+}
+
+.hero .col.col-img{
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  padding: 0;
+  max-width: 246px;
+}
+
+.hero .col.col-img img{
+  height: 461px;
+  width: 246px;
+}
+
+main.about{
+  background-color: #F6F2ED;
+}
+
+.about .h-100{
+  display: flex;
+  -webkit-display: flex;
+  padding: 0;
+}
+
+.about .col.col-text{
+  display: flex;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  width: 45%;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.about .col.col-text h2{
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.about .col.col-text p{
+  line-height: 27px;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+
+.about .col.col-img{
+  display: flex;
+  -webkit-display: flex;
+  width: 45%;
+  padding-right: 0;
+}
+
+.about .col.col-img img{
+  width: 100%;
+}
+
+main.key-features{
+  background: #F6F6F6;
+  padding: 50px 0;
+}
+
+main.key-features .container{
+  height: auto;
+}
+
+.key-features h2{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.key-features .cards{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.key-features .card{
+  width: 25rem;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  align-content: space-around;
+  text-align: center;
+  overflow: hidden; 
+  border: none;
+  background-color: inherit;
+}
+
+.key-features .card img{
+  width: 47px;
+  height: 47px;
+  margin-bottom: 2rem;
+}
+
+.key-features .card-body{
+  padding: 20px 1rem;
+}
+
+.key-features .card-body h3{
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.key-features .card-body p{
+  line-height: 24px;
+}
+
+main.faq{
+  background: #6B97A9;
+}
+
+@media screen and (min-width:1480px){
+  .container{
+    max-width: 1400px;
+  }
+  
+  .hero .container{
+    max-width: 1000px;
+  }
+
+  .key-features .card-body{
+    padding: 20px 2rem;
+  }
+}
