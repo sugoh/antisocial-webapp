@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Footer.css';
 
 class Footer extends Component {
 
@@ -10,11 +11,11 @@ class Footer extends Component {
                     <main role="main">
                         <section className="keyFeatures container h-100 align-items-center">
                             <section>
-                                <p>The Good Stuff</p>    
+                                <h3>The Good Stuff</h3>    
                                 <ul>
-                                    <li>FAQ</li>
+                                    <li><a href={process.env.PUBLIC_URL + "/#"}>FAQ</a></li>
                                     <li>Contact us</li>
-                                    <li>Terms</li>
+                                    <li><a href={process.env.PUBLIC_URL + "/files/Superpotato_terms_20200119.pdf"}>Terms</a></li>
                                 </ul>
                             </section>
                             <p>&#169; 2020 bunch of friends</p>

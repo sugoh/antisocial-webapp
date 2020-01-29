@@ -1,0 +1,23 @@
+h3{
+    font-size: 16px;
+    font-weight: 800;
+    color: #E6EFF3;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    font-size: 16px;
+    color: #FFF;
+}
+
+a:hover{
+    text-decoration: none;
+    font-weight: 700;
+    color: #84C022;
+    transition: color 0.1s ease;
+}
