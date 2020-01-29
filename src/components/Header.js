@@ -11,17 +11,17 @@ class Header extends Component {
                         <section className="container">
                             <section className="col col-text">
                                 <h1 className="display-4">
-                                    Better friendships,
-                                </h1>
-                                <h1 className="display-4">
-                                    stress-free.
+                                    Stop losing touch with friends.
                                 </h1>
                                 <p className="lead">
-                                    Superpotato is a personal assistant that helps you remember, manage, and grow your social network. 
+                                    The most successful people put their relationships first. 
                                 </p>
                                 <p className="lead">
-                                    Stop messing with spreadsheets and chillax like a real potato.
+                                    Superpotato is a personal assistant that helps you remember, manage, and grow your own social network.
                                 </p>
+				<p className="lead">
+				    Stop messing with spreadsheets and chillax like a boss potato.
+				</p>
                                 <button type="button" class="btn btn-primary">Get early access for free</button>
                             </section>
                             <section className="col col-img">
