@@ -29,7 +29,7 @@ class SignUp extends Component {
                 <Form.Row>
                     <Form.Group controlId="validationCustom01">
                         <Col>
-                            <Form.Label > First Name </Form.Label>
+                            <Form.Label className="showLabel" > First Name </Form.Label>
                             <Form.Control
                                 placeholder="First name"
                                 required
