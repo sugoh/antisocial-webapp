@@ -29,8 +29,7 @@ class SignUp extends Component {
                 <Form.Row>
                     <Form.Group controlId="validationCustom01">
                         <Col>
-                            <Form.Label>First Name</Form.Label>
-
+                            <Form.Label > First Name </Form.Label>
                             <Form.Control
                                 placeholder="First name"
                                 required
@@ -42,7 +41,7 @@ class SignUp extends Component {
                     </Form.Group>
                     <Form.Group controlId="validationCustom02">
                         <Col>
-                            <Form.Label>Last Name</Form.Label>
+                            <Form.Label classname="showLabel" >Last Name</Form.Label>
                             <Form.Control
                                 required
                                 type="text"
@@ -52,7 +51,7 @@ class SignUp extends Component {
                     </Form.Group>
                     <Form.Group controlId="formBasicEmail">
                         <Col>
-                            <Form.Label>Email address</Form.Label>
+                            <Form.Label classname="showLabel" >Email address</Form.Label>
                             <Form.Control required type="email" placeholder="Enter email" />
                         </Col>
                     </Form.Group>
