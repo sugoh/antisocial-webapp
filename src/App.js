@@ -12,16 +12,25 @@ import FAQ from './components/FAQ.js';
 
 class App extends Component {
 
+  var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+  var server_host = process.env.YOUR_HOST || '0.0.0.0';
+  server.listen(server_port, server_host, function() {
+    console.log('Listening on port %d', server_port);
+  });
+
   render() {
     return (
-      <div>
+      <section>
         <Nav />
         <Header />
-        <About />
+        <svg viewBox="0 0 1695 72" preserveAspectRatio="none">
+          <path d="M0 0c282.5 45 565 67.5 847.5 67.5S1412.5 45 1695 0v72H0V0z" fill="#F6F6F6" fill-rule="evenodd"></path>
+        </svg>
         <Features />
+        <About />
         <FAQ />
         <Footer />
-      </div>
+      </section>
     )
   }
 }
