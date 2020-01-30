@@ -1,3 +1,7 @@
+main.footer{
+    padding-top: 13rem;
+  }
+
 h3{
     font-size: 16px;
     font-weight: 800;
@@ -19,5 +23,13 @@ a:hover{
     text-decoration: none;
     font-weight: 700;
     color: #84C022;
-    transition: color 0.1s ease;
+    transition: color ease;
+    transition-duration: .15s;
+    -webkit-transition-duration: .15s;
+}
+
+@media screen and (max-width:1200px){
+    main.footer{
+        padding-top: 10rem;
+    }
 }

@@ -1,7 +1,22 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Modal } from 'react-bootstrap'
+import SignUp from './SignUp.js';
 
 class Header extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            show: false
+        }
+    }
+
+    handleModal() {
+        this.setState({
+            show: !this.state.show
+        })
+    }
 
     render() {
         return (
@@ -19,10 +34,21 @@ class Header extends Component {
                                 <p className="lead">
                                     Superpotato is a personal assistant that helps you remember, manage, and grow your own social network.
                                 </p>
-				<p className="lead">
-				    Stop messing with spreadsheets and chillax like a boss potato.
-				</p>
-                                <button type="button" class="btn btn-primary">Get early access for free</button>
+                                <p className="lead">
+                                    Stop messing with spreadsheets and chillax like a boss potato.
+                                </p>
+                                
+                                <div className="popUp">
+                                    <button type="button" className="btn btn-primary" variant="success" onClick={() => { this.handleModal() }}>Get early access for free</button>
+                                    <Modal show={this.state.show} onHide={() => this.handleModal()}>
+                                        <Modal.Header closeButton > Head Part</Modal.Header>
+                                        <Modal.Body>
+                                            <SignUp />
+                                        </Modal.Body>
+                                        <Modal.Footer>
+                                        </Modal.Footer>
+                                    </Modal>
+                                </div>
                             </section>
                             <section className="col col-img">
                                 <img className="IphoneXMock" alt="app mockup" src={process.env.PUBLIC_URL + "/img/landing_mock.png"} />
