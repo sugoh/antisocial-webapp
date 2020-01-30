@@ -288,6 +288,10 @@ nav .btn{
   width: 246px;
 }
 
+.nice-curve{
+  min-height: 31px;
+}
+
 about main{
   position: relative;
   height: 100%;

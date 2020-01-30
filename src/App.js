@@ -16,7 +16,7 @@ class App extends Component {
       <section>
         <Nav />
         <Header />
-        <svg viewBox="0 0 1695 72" preserveAspectRatio="none">
+        <svg className="nice-curve" viewBox="0 0 1695 72" preserveAspectRatio="none">
           <path d="M0 0c282.5 45 565 67.5 847.5 67.5S1412.5 45 1695 0v72H0V0z" fill="#F6F6F6" fill-rule="evenodd"></path>
         </svg>
         <Features />
