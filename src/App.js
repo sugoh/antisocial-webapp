@@ -9,10 +9,6 @@ import Features from './components/Features.js';
 import Footer from './components/Footer.js';
 import FAQ from './components/FAQ.js';
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
-
 class App extends Component {
 
   render() {
