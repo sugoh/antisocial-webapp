@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Modal } from 'react-bootstrap'
-import SignUp from './SignUp.js';
+import ModalSignUp from './ModalSignUp.js';
 
 class NavLink extends Component {
 
@@ -34,17 +33,7 @@ class NavLink extends Component {
                     <Navbar.Brand className="custom navbar-brand" href="#">superpotato</Navbar.Brand>
                     <Nav className="navbar-collapse collapse justify-content-end">
                         <Nav.Link className="nav-link" href="#about">About</Nav.Link>
-                        <div className="popUp">
-                            <button className="btn btn-primary" variant="success" type="button" onClick={() => { this.handleModal() }}>Get early access</button>
-                            <Modal show={this.state.show} onHide={() => this.handleModal()}>
-                                <Modal.Header closeButton > </Modal.Header>
-                                <Modal.Body>
-                                    <SignUp />
-                                </Modal.Body>
-                                <Modal.Footer>
-                                </Modal.Footer>
-                            </Modal>
-                        </div>
+                        <ModalSignUp />
                     </Nav>
                 </Navbar>
             </nav>

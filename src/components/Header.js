@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Modal } from 'react-bootstrap'
-import SignUp from './SignUp.js';
+import ModalSignUp from './ModalSignUp.js';
 
 class Header extends Component {
 
@@ -37,18 +36,7 @@ class Header extends Component {
                                 <p className="lead">
                                     Stop messing with spreadsheets and chillax like a boss potato.
                                 </p>
-
-                                <div className="popUp">
-                                    <button type="button" className="btn btn-primary" variant="success" onClick={() => { this.handleModal() }}>Get early access for free</button>
-                                    <Modal show={this.state.show} onHide={() => this.handleModal()}>
-                                        <Modal.Header closeButton > </Modal.Header>
-                                        <Modal.Body>
-                                            <SignUp />
-                                        </Modal.Body>
-                                        <Modal.Footer>
-                                        </Modal.Footer>
-                                    </Modal>
-                                </div>
+                                <ModalSignUp />
                             </section>
                             <section className="col col-img">
                                 <img className="IphoneXMock" alt="app mockup" src={process.env.PUBLIC_URL + "/img/landing_mock.png"} />
