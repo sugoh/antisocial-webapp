@@ -836,3 +836,22 @@ faq main::before{
     position:static;
   }
 }
+.showLabel{
+  color: #00344A;
+  font-family: "Roboto", "sans-serif";;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 5px;
+}
+
+label.form-check-label{
+  color: #00344A;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.submitBtn{
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

@@ -29,7 +29,7 @@ class Header extends Component {
                                     Stop losing touch with friends.
                                 </h1>
                                 <p className="lead">
-                                    The most successful people put their relationships first. 
+                                    The most successful people put their relationships first.
                                 </p>
                                 <p className="lead">
                                     Superpotato is a personal assistant that helps you remember, manage, and grow your own social network.
@@ -37,11 +37,11 @@ class Header extends Component {
                                 <p className="lead">
                                     Stop messing with spreadsheets and chillax like a boss potato.
                                 </p>
-                                
+
                                 <div className="popUp">
                                     <button type="button" className="btn btn-primary" variant="success" onClick={() => { this.handleModal() }}>Get early access for free</button>
                                     <Modal show={this.state.show} onHide={() => this.handleModal()}>
-                                        <Modal.Header closeButton > Head Part</Modal.Header>
+                                        <Modal.Header closeButton > </Modal.Header>
                                         <Modal.Body>
                                             <SignUp />
                                         </Modal.Body>
