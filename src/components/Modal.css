@@ -1,0 +1,27 @@
+.modal-header{
+    border: none;
+}
+
+.modal-footer{
+    border: none;
+}
+
+.showLabel{
+    color: #00344A;
+    font-family: "Roboto", "sans-serif";;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px;
+    }
+  
+label.form-check-label{
+    color: #00344A;
+    font-size: 14px;
+    font-weight: normal;
+    }
+  
+.submitBtn.btn{
+    width: 10rem;
+    height: 44px;
+    padding: 0;
+    }

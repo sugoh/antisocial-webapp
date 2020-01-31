@@ -90,7 +90,8 @@ p.font-light {
 }
 
 .btn{
-  padding: 1rem 1.5rem;
+  padding: 0 1.5rem;
+  height: 44px;
   border-radius: 100rem;
   font-weight: bold;
   border: none;
@@ -272,7 +273,7 @@ nav .btn{
 
 .hero .col-text button{
   margin-top: 2em;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
 }
 
 .hero .col.col-img{
@@ -625,6 +626,10 @@ faq main::before{
     max-width: 950px;
   }
 
+  .navbar-default{
+    padding: 1rem 15px;
+  }
+
   hero .col.col-text{
     max-width: 600px;
   }
@@ -677,7 +682,7 @@ faq main::before{
   }
   
   .navbar-default{
-    padding: 1rem 30px;
+    padding: 1rem 15px;
   }
 
   .navbar-default .nav-link{
@@ -760,7 +765,7 @@ faq main::before{
   }
   
   .navbar-default{
-    padding: 1rem 30px;
+    padding: 1rem 15px;
   }
 
   .navbar-default .nav-link{
@@ -835,23 +840,4 @@ faq main::before{
     width: 100%;
     position:static;
   }
-}
-.showLabel{
-  color: #00344A;
-  font-family: "Roboto", "sans-serif";;
-  font-weight: bold;
-  font-size: 16px;
-  margin: 5px;
-}
-
-label.form-check-label{
-  color: #00344A;
-  font-size: 14px;
-  font-weight: normal;
-}
-
-.submitBtn{
-  border-radius: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
 }

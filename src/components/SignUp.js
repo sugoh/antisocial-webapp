@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Button, Col } from 'react-bootstrap/';
+import './Modal.css';
 
 class SignUp extends Component {
     constructor(props) {

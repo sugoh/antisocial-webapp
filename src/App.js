@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavLink from './components/Nav.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './components/Modal.css';
 import Nav from './components/Nav.js'
 import Header from './components/Header.js';
 import About from './components/About.js';
