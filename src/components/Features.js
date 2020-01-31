@@ -35,7 +35,7 @@ class Features extends Component {
                                     <div className="card">
                                         <div className="card-body">
                                             <img className="icon" alt="cocktail icon" src={process.env.PUBLIC_URL + "/img/icons/cocktail.png"} />
-                                            <h3 className="font-light card-title">Conversation hooks</h3>
+                                            <h3 className="font-light card-title">Convenient icebreakers</h3>
                                             <p className="font-light">Unsure how to reconnect? Superpotato uses social media data to find potential conversation topics - your contact’s family, college, hobbies etc.</p>
                                         </div>
                                     </div>

@@ -31,10 +31,10 @@ class Header extends Component {
                                     The most successful people put their relationships first.
                                 </p>
                                 <p className="lead">
-                                    Superpotato is a personal assistant that helps you remember, manage, and grow your own social network.
+                                    Superpotato is a personal assistant that helps you remember, manage, and grow your social network.
                                 </p>
                                 <p className="lead">
-                                    Stop messing with spreadsheets and chillax like a boss potato.
+                                    Stop messing with spreadsheets and relax like a boss potato.
                                 </p>
                                 <ModalSignUp />
                             </section>
