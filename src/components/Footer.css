@@ -1,8 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,600&display=swap');
+
 main.footer{
     padding-top: 13rem;
   }
 
-h3{
+.footer-CTA{
+    margin-bottom: 40px;
+}
+
+.footer-CTA h2{
+    margin-bottom: 15px;
+}
+
+.footer-CTA h3{
+    font-weight: 500;
+    color: #CDE1EA;
+    margin-bottom: 30px;
+}
+
+.footer .line-break.line-dark{
+    border-bottom-width: 1px;
+}
+
+.footer-links{
+    margin-bottom: 40px;
+}
+
+.footer-links h3{
     font-size: 16px;
     font-weight: 800;
     color: #E6EFF3;
