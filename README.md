@@ -1,11 +1,10 @@
 # AntisocialNetworkFrontend
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses an [Express](http://www.react.express/) backend.<br />
-The package manager used is NPM.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses an [Express](http://www.react.express/) backend. The package manager used is NPM.
 
 ## Troubleshooting Heroku deployment errors
 
 Heroku deployment is finicky. Try these steps if you see error messages despite a successful build.<br />
-First, ensure you are running the app in production mode. To do so, go to package.json and check that `scripts` matches the following:
+First, ensure you are running the app in production mode. To do so, go to `package.json` and check that `scripts` matches the following:
 
 ```javascript
 "scripts": {
@@ -18,7 +17,7 @@ First, ensure you are running the app in production mode. To do so, go to packag
 
 If `"start": "react-scripts start"`, you are in development mode. Please change it to `"start": "node server.js"`.
 
-If you are still seeing errors on Heroku, there might be errors in package-lock.json. To fix this, do a fresh install of npm in antisocial-webapp by running the following in terminal:
+If you are still seeing errors on Heroku, there might be errors in `package-lock.json`. To fix this, do a fresh install of `npm` in `antisocial-webapp` by running the following in terminal once you are in the `antisocial-webapp` directory:
 ```
 rm -r node_modules
 rm package-lock.json
@@ -36,7 +35,7 @@ In the project directory, you can run:
 Runs the app in production mode. Use after `npm build`.<br />
 Open [http://localhost:8080](http://localhost:8080) to view it in the browser.<br />
 
-To run the app in the development mode, replace `node server.js` with `react-scripts start` in package.json first.<br />
+To run the app in the development mode, replace `node server.js` with `react-scripts start` in `package.json` first.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.<br />
 In development mode, the page will reload if you make edits.<br />
 You will also see any lint errors in the console.
