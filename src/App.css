@@ -10,6 +10,7 @@ body{
   font-style: normal;
   color: #FFFFFF;
   background: #00344A;
+  padding-right: 0;
 }
 
 body .modal-open{
