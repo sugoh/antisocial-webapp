@@ -12,6 +12,10 @@ body{
   background: #00344A;
 }
 
+body .modal-open{
+  padding-right: 0;
+}
+
 main.background-white{
   background-color: #F6F6F6;
 }
