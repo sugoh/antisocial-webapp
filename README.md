@@ -1,5 +1,31 @@
 # AntisocialNetworkFrontend
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses an [Express](http://www.react.express/) backend.<br />
+The package manager used is NPM.
+
+## Troubleshooting Heroku deployment errors
+
+Heroku deployment is finicky. Try these steps if you see error messages despite a successful build.<br />
+First, ensure you are running the app in production mode. To do so, go to package.json and check that `scripts` matches the following:
+
+```javascript
+"scripts": {
+    "start": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+```
+
+If `"start": "react-scripts start"`, you are in development mode. Please change it to `"start": "node server.js"`.
+
+If you are still seeing errors on Heroku, there might be errors in package-lock.json. To fix this, do a fresh install of npm in antisocial-webapp by running the following in terminal:
+```
+rm -r node_modules
+rm package-lock.json
+npm install
+npm add express express-favicon path
+```
+Now push to Git (Heroku branch) and try deploying to Heroku again.
 
 ## Available Scripts
 
@@ -7,10 +33,12 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in production mode. Use after `npm build`.<br />
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.<br />
 
-The page will reload if you make edits.<br />
+To run the app in the development mode, replace `node server.js` with `react-scripts start` in package.json first.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.<br />
+In development mode, the page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
 ### `npm test`
