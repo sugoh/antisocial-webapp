@@ -14,7 +14,7 @@ body{
 }
 
 body .modal-open{
-  padding-right: 0;
+  padding-right: 0 !important;
 }
 
 main.background-white{
