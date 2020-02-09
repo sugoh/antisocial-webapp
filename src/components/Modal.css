@@ -29,10 +29,6 @@
     justify-content: center;
 }
 
-body .modal-open{
-    padding-right: 0 !important;   
-}
-
 .form-group .col{
     width: 320px;
 }
