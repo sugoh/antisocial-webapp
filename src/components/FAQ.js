@@ -17,7 +17,7 @@ class FAQ extends Component {
                             <section className="card-body a">
                                 <h2 className="faq-indicator a">A.</h2>
                                 <p className="font-light card-text">
-                                We don't sell your data to third parties. We request permission to access your chat apps and communication logs only to help you organize your contacts / sms / chat / call / email data. Furthermore, you can individually select what information you wish to share with us within the app. Unlike some other tech companies, you're our customer, not our product! After our beta period ends, Superpotato will cost users $1.99 /month.
+                                Unlike some other tech companies, we'd like you to be our customer, not our product! We don't sell your data to third parties. We request permission to access your chat apps and communication logs only to help you organize your contacts / sms / chat / call / email data. Furthermore, you can individually select what information you wish to share with us within the app. After our beta period ends, Superpotato will cost users $1.99 /month.
                                 </p>
                             </section>
                         </section>
