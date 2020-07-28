@@ -13,6 +13,10 @@ body{
   padding-right: 0;
 }
 
+.div.fade.modal.show{
+  padding-right: 0px;
+}
+
 .modal-open{
   padding-right: 0 !important;
 }

@@ -33,6 +33,20 @@
     width: 320px;
 }
 
+.confirmation-modal{
+    text-align: center;
+}
+
+.confirmation-modal .icon{
+    padding-bottom: 10px;
+    height: 80px;
+}
+
+.confirmation-modal .modal-subtitle{
+    padding-top: 5px;
+    font-size: 18px;
+}
+
 @media screen and (max-width:350px){
     
     .modal-header-wrapper{

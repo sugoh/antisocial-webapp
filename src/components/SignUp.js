@@ -9,7 +9,6 @@ class SignUp extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
       validated: false,
-      setValidated: false,
       status: "",
       formFields: {
         first_name: "",
@@ -48,11 +47,14 @@ class SignUp extends Component {
 
     const xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application.json");
+    xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         this.setState({ status: "SUCCESS" });
+        // check if there is a response
+        // let response_body = xhr.response;
+        // console.log(response_body);
         this.setState({
           formFields: {
             first_name: "",
@@ -60,6 +62,7 @@ class SignUp extends Component {
             email: ""
           }
         });
+        this.props.onSuccess();
       } else {
         this.setState({ status: "ERROR" });
       }
@@ -75,7 +78,8 @@ class SignUp extends Component {
         name="waitlist"
         validated={this.validated}
         onSubmit={this.handleSubmit}
-        action="https://formspree.io/xbjodrgl"
+        action="https://antisocial-network-api.herokuapp.com/api/v1/signup"
+        // old formspree account: https://formspree.io/xbjodrgl
         method="POST"
       >
         <Form.Group controlId="validationCustom01">
@@ -84,7 +88,7 @@ class SignUp extends Component {
             <input
               className="form-control"
               name="first_name"
-              placeholder="First name"
+              placeholder=""
               required
               type="text"
               value={this.state.formFields.firstName}
