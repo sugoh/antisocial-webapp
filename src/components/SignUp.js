@@ -78,8 +78,8 @@ class SignUp extends Component {
         name="waitlist"
         validated={this.validated}
         onSubmit={this.handleSubmit}
-        action="https://really-antisocial-backend.herokuapp.com/api/v1/signup"
-        //"https://antisocial-network-api.herokuapp.com/api/v1/signup"
+        action="https://antisocial-network-api.herokuapp.com/api/v1/signup"
+        //"https://really-antisocial-backend.herokuapp.com/api/v1/signup"
         // old formspree account: https://formspree.io/xbjodrgl
         method="POST"
       >
